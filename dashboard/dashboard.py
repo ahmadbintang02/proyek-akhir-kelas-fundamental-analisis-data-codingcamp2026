@@ -10,9 +10,9 @@ st.set_page_config(page_title="E-commerce Data Dashboard", layout="wide")
 # Helper function untuk memuat data
 def load_data():
     # Pastikan file CSV ini ada di folder yang sama dengan dashboard.py
-    monthly_df = pd.read_csv("monthly_revenue_clean.csv")
-    city_df = pd.read_csv("city_revenue_clean.csv")
-    rfm_df = pd.read_csv("rfm_clean.csv") 
+    monthly_df = pd.read_csv("dashboard/monthly_revenue_clean.csv")
+    city_df = pd.read_csv("dashboard/city_revenue_clean.csv")
+    rfm_df = pd.read_csv("dashboard/rfm_clean.csv") 
     
     monthly_df['order_purchase_timestamp'] = pd.to_datetime(monthly_df['order_purchase_timestamp'])
     return monthly_df, city_df, rfm_df
