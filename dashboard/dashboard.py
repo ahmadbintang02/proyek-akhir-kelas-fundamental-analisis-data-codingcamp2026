@@ -131,7 +131,7 @@ st.info("""
 st.markdown("---")
 
 # 3. RFM ANALYSIS
-st.subheader("Distribusi Segmen Pelanggan (RFM)")
+st.subheader("Distribusi Segmen Pelanggan (RFM Analysis)")
 fig_rfm, ax_rfm = plt.subplots(figsize=(10, 6))
 
 sns.countplot(
